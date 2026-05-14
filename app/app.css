@@ -4,23 +4,14 @@
   --md-ref-typeface-brand: 'Montserrat';
   --md-ref-typeface-plain: 'Open Sans';
 } */
-.home ul {
-  list-style-type: disc;
-  padding-left: 24px;
-  color: black;
-}
-.home ul li {
-  list-style-type: disc;
-}
-.home ul li::marker {
-  color: black;
-}
 .home {
     padding:16px;
     background-color: #fff3ef;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     .img {
-        width: 500px;
+        width: 100%;
+        height: 100%;
     }
     .titleSection {
         display: flex;
@@ -37,7 +28,7 @@
                     align-self: center;
                 }
                 display: flex;
-                gap: 24px;
+                gap: 40px;
                 text-align: center;
                 align-items: center;
                 justify-content: center;
@@ -48,14 +39,64 @@
                 text-align: left;
             }
         }
+        .right {
+            width: 25%;
+        }
     }
     .about {
         display: flex;
         justify-content: space-between;
-        gap: 16px;
+        align-items: center;
+        .img {
+            width: 35%;
+        }
         .aboutText {
             padding: 40px;
             font-size: 20px;
+            width: 75%;
         }
+    }
+    @media (max-width: 600px) {
+        .titleSection {
+            flex-direction: column;
+            align-items: center;
+            .left {
+                width: 100%;
+                align-items: center;
+                .sarah {
+                    flex-direction: column;
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+                .jobTitle {
+                    text-align: center;
+                }
+            }
+            .right {
+                width: 60%;
+            }
+        }
+        .about {
+            flex-direction: column;
+            .img {
+                width: 80%;
+            }
+            .aboutText {
+                width: 100%;
+                padding: 16px 0;
+            }
+        }
+    }
+    .workExperience ul {
+        list-style-type: disc;
+        padding-left: 24px;
+        color: black;
+    }
+    .workExperience ul li {
+        list-style-type: disc;
+    }
+    .workExperience ul li::marker {
+        color: black;
     }
 }
