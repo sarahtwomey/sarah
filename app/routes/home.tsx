@@ -105,13 +105,13 @@ function aboutSection() {
         <div className="aboutText">
           <div>
             Hello! I'm Sarah I'm a full stack engineer based in Raleigh, NC. I work in React, Python and PostgreSQL. 
-            I am passionate about solving problems and learning new things. I've worked as a front end engineer focusing on the user experience 
+            I am passionate about problem solving and learning new things. I've worked as a front end engineer focusing on the user experience 
             and I currently work as a full stack engineer working on all aspects of the development pipeline.
           </div>
           <br/>
           <div>
             When I am not working you can find me on the tennis court. I love to be outdoors running, camping, hiking and biking. I have two dogs Daisy and Palmer that keep my busy.
-            I also love to travel and experiences new places.
+            I also love to travel and experience new places.
           </div>
         </div>
     </div>
